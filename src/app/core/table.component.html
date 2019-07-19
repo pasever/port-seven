@@ -2,8 +2,8 @@
   <tr>
     <th>ID</th><th>Name</th><th>Category</th><th>Price</th><th></th>
   </tr>
-  <tr *ngFor="let item of getProducts()">
-    <td class="middle">{{item.id}}</td>
+  <tr *ngFor="let item of getProducts(), let i = index">
+    <td>{{i + 1}}</td>
     <td>{{item.name}}</td>
     <td>{{item.category}}</td>
     <td>{{item.price | currency:"USD" }}</td>

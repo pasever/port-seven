@@ -1,11 +1,11 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { Product } from './product.model';
 import { StaticDataSource } from './static.datasource';
 
 @Injectable()
 export class Model {
   products: Product[] = [];
-  private locator = (p: Product, id: number) => p.id === id;
+  private locator = (product: Product, id: number) => product.id === id;
 
   constructor(private dataSource: StaticDataSource) {
     this.dataSource.getData().forEach(product => this.products.push(product));
@@ -22,15 +22,16 @@ export class Model {
   saveProduct(product: Product): void {
     if (product.id === 0 || product.id === null) {
         product.id = this.generateID();
+        console.log(this.generateID());
         this.products.push(product);
     } else {
-      let index = this.products.findIndex(p => this.locator(p, product.id));
+      const index = this.products.findIndex(p => this.locator(p, product.id));
       this.products.splice(index, 1, product);
     }
   }
 
   deleteProduct(id: number): void {
-    let index = this.products.findIndex(p => this.locator(p, id));
+    const index = this.products.findIndex(p => this.locator(p, id));
     if (index > -1) {
       this.products.splice(index, 1);
     }

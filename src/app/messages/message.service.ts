@@ -4,7 +4,7 @@ import { Message } from './message.model';
 @Injectable()
 export class MessageService {
 
-    private handler: (m: Message) => void;
+    private handler: (message: Message) => void;
 
     reportMessage(msg: Message) {
       if (this.handler !== null) {
@@ -12,7 +12,7 @@ export class MessageService {
       }
     }
 
-    registerMessageHandler(handler: (m: Message) => void) {
+    registerMessageHandler(handler: (message: Message) => void) {
         this.handler = handler;
     }
 

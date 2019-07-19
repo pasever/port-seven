@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Product } from '../model/product.model';
 import { Model } from '../model/repository.model';
@@ -9,8 +9,9 @@ import { MODES, SharedState} from './sharedState.model';
   templateUrl: 'form.component.html',
   styleUrls: ['./form.component.scss']
 })
-export class FormComponent {
+export class FormComponent implements DoCheck {
   product: Product = new Product();
+  lastId: number;
 
   constructor(
     private model: Model,
@@ -29,4 +30,19 @@ export class FormComponent {
       form.reset();
     }
   }
+
+  resetForm() {
+    this.product = new Product();
+  }
+
+  ngDoCheck() {
+    if (this.lastId !== this.state.id) {
+      this.product = new Product();
+    }
+    if (this.state.mode === MODES.EDIT) {
+      Object.assign(this.product, this.model.getProduct(this.state.id))
+    }
+    this.lastId = this.state.id;
+  }
+
 }
