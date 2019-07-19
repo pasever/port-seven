@@ -3,7 +3,7 @@ import { Product } from './product.model';
 
 @Injectable()
 export class StaticDataSource {
-  private data: Product[];
+  data: Product[];
 
   constructor() {
     this.data = [new Product(1, 'Kayak', 'Watersports', 275),

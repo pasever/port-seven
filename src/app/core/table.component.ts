@@ -4,8 +4,9 @@ import { Model } from '../model/repository.model';
 import { MODES, SharedState} from './sharedState.model';
 
 @Component({
-  selector: 'paTable',
-  templateUrl: 'table.component.html'
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.scss']
 })
 export class TableComponent {
 

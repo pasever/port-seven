@@ -3,8 +3,9 @@ import { MessageService } from './message.service';
 import { Message } from './message.model';
 
 @Component({
-    selector: 'paMessages',
+    selector: 'app-messages',
     templateUrl: 'message.component.html',
+    styleUrls: ['./message.component.scss']
 })
 export class MessageComponent {
     lastMessage: Message;

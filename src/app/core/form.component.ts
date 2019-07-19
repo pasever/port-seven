@@ -5,9 +5,9 @@ import { Model } from '../model/repository.model';
 import { MODES, SharedState} from './sharedState.model';
 
 @Component({
-  selector: 'paForm',
+  selector: 'app-form',
   templateUrl: 'form.component.html',
-  styleUrls: ['form.component.css']
+  styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
   product: Product = new Product();
