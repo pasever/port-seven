@@ -7,15 +7,14 @@ import { Subject } from 'rxjs';
 export class MessageService {
 
     private handler: (message: Message) => void;
+    private subject = new Subject<Message>();
 
     reportMessage(msg: Message) {
-      if (this.handler !== null) {
-        this.handler(msg);
-      }
+        this.subject.next(msg);
     }
 
-    registerMessageHandler(handler: (message: Message) => void) {
-        this.handler = handler;
+    get messages(): Subject<Message> {
+        return this.subject;
     }
 
 }

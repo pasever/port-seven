@@ -7,12 +7,26 @@ import { FormComponent } from './form.component';
 import { SharedState, SHARED_STATE } from './sharedState.model';
 import { Subject } from 'rxjs';
 import { StatePipe } from './state.pipe';
+import { MessageModule } from '../messages/message.module';
+import { MessageService } from '../messages/message.service';
+import { Message } from '../messages/message.model';
+import { Model } from '../model/repository.model';
+import { MODES } from './sharedState.model';
 
 
 @NgModule({
-    imports: [ BrowserModule, FormsModule, ModelModule ],
-    declarations: [TableComponent, FormComponent, StatePipe ],
-    providers: [{ provide: SHARED_STATE, useValue: new Subject<SharedState>() }],
-    exports: [ ModelModule, TableComponent, FormComponent ]
+    imports: [ BrowserModule, FormsModule, ModelModule, MessageModule ],
+    declarations: [ TableComponent, FormComponent, StatePipe ],
+    providers: [{
+    provide: SHARED_STATE,
+    deps: [ MessageService, Model ],
+    useFactory: (messageService, model) => {
+        const subject = new Subject<SharedState>();
+        subject.subscribe(message => messageService.reportMessage(
+            new Message(MODES[message.mode] + (message.id !== undefined
+                ? ` ${model.getProduct(message.id).name}` : ''))));
+        return subject;
+        }
+    }]
 })
 export class CoreModule { }
