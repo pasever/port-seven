@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c81b7e8d-08e4-4108-b3b9-ce7fd782317d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/message.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/message.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/messages/message.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/messages/message.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/form.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.527897">
+    <splitter split-orientation="horizontal" split-proportion="0.65055764">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="table.component.html" pinned="false" current-in-tab="false">
@@ -75,8 +73,8 @@
           <file leaf-file-name="message.component.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/messages/message.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="238">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -93,23 +91,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.module.ts" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/core/core.module.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="form.component.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="form.component.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/core/form.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -122,7 +111,7 @@
             <entry file="file://$PROJECT_DIR$/src/app/core/sharedState.model.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -158,12 +147,12 @@
         <option value="$PROJECT_DIR$/src/app/model/repository.model.ts" />
         <option value="$PROJECT_DIR$/src/app/core/table.component.ts" />
         <option value="$PROJECT_DIR$/src/app/core/sharedState.model.ts" />
-        <option value="$PROJECT_DIR$/src/app/core/form.component.ts" />
         <option value="$PROJECT_DIR$/src/app/core/form.component.html" />
         <option value="$PROJECT_DIR$/src/app/core/state.pipe.ts" />
         <option value="$PROJECT_DIR$/src/app/messages/message.component.ts" />
         <option value="$PROJECT_DIR$/src/app/messages/message.service.ts" />
         <option value="$PROJECT_DIR$/src/app/core/core.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/core/form.component.ts" />
       </list>
     </option>
   </component>
@@ -181,7 +170,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -321,15 +310,16 @@
       <workItem from="1563803629384" duration="3193000" />
       <workItem from="1563816075009" duration="598000" />
       <workItem from="1563820715708" duration="2704000" />
-      <workItem from="1563902882626" duration="2506000" />
+      <workItem from="1563902882626" duration="4651000" />
+      <workItem from="1564001284846" duration="1748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24497000" />
+    <option name="totallyTimeSpent" value="28390000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -339,10 +329,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16209476" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23815462" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.3299389" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19098713" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -685,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/form.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/table.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -729,19 +712,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/sharedState.model.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/messages/message.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/messages/message.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/core/sharedState.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/core.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,12 +746,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/core.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/core/form.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="357">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
