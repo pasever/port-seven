@@ -1,0 +1,10 @@
+<app-set-tab>
+
+    <!--<app-tab title="First tab">-->
+        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+        <!--Quibusdam magni quia ut harum facilis, ullam deleniti porro-->
+    <!--</app-tab>-->
+    <app-tab *ngFor="let tab of tabs" [title]="tab.title">
+        {{ tab.content }}
+    </app-tab>
+</app-set-tab>

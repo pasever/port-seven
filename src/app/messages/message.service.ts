@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Message } from './message.model';
-import { Observable } from 'rxjs';
 import { Subject } from 'rxjs';
 
 @Injectable()

@@ -12,11 +12,27 @@ import { MessageService } from '../messages/message.service';
 import { Message } from '../messages/message.model';
 import { Model } from '../model/repository.model';
 import { MODES } from './sharedState.model';
+import { PopupComponent } from './popup.component';
+import { PopupDirective } from '../directives/popup';
+import { MessageContentComponent } from './message-content.component';
+import { ContentTabsDemoComponent } from './content-tabs-demo.component';
+import { ContentTabComponent } from './content-tab.component';
+import { ContentTabsetComponent } from './content-tabset.component';
 
 
 @NgModule({
     imports: [ BrowserModule, FormsModule, ModelModule, MessageModule ],
-    declarations: [ TableComponent, FormComponent, StatePipe ],
+    declarations: [
+        TableComponent,
+        FormComponent,
+        StatePipe,
+        PopupComponent,
+        PopupDirective,
+        MessageContentComponent,
+        ContentTabsDemoComponent,
+        ContentTabComponent,
+        ContentTabsetComponent
+    ],
     providers: [{
     provide: SHARED_STATE,
     deps: [ MessageService, Model ],
